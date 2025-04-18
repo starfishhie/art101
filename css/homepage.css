@@ -1,6 +1,27 @@
 /* this css file will only style the homepage of our site */
+#content {
+  overflow: auto;
+}
 
-.cat-photo {
+.minor-section {
+  overflow: auto;
+}
+
+img.portrait {
   margin: 10px;
   max-width: 500px;
+  max-height: 400px;
+  border-style:solid;
+  border-width: 3px; 
+  border-color:#335e63;
+  border-radius: 10px;
+  float:left;
+}
+
+a {
+  color: #d4ffe1;
+}
+
+li {
+  color: #d4ffe1;
 }
