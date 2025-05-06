@@ -1,4 +1,4 @@
-// index.js - lab 5
+// index.js - lab 6
 // author: rhys muth
 // date: 04.24.25
 
