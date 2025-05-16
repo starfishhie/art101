@@ -1,0 +1,67 @@
+TYPE html>
+<html>
+<head>
+	<!-- This title is used for tabs and bookmarks -->
+	<title>lab 10 - javascript for the web</title>
+
+	<!-- Use UTF character set, a good idea with any webpage -->
+  	<meta charset="UTF-8" />
+	<!-- Set viewport so page remains consistently scaled w narrow devices -->
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      
+    <link rel="stylesheet" type="text/css" href="../css/site.css">
+    <link rel="stylesheet" type="text/css" href="css/lab.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="js/lab.js" DEFER></script>
+</head>
+<body>
+	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
+	<main id="content">
+		<section>
+			<h1>lab 10 - javascript for the web</h1>
+			<div class="minor-section">
+				<h2>challenge</h2>
+                <div id="challenge">
+				    <p>for this lab, the goal was to make a button that spat out a string of randomly generated text when pressed.</p>
+                </div>
+			</div>
+
+			<div class="minor-section">
+                <h2>problems</h2>
+                <div id="problems">
+                    <p>i had a brief issue where my button wasn't displaying the text when i pressed it, and at first i thought maybe i had some variables in the wrong places, so i moved the newText variable outside of the button listener function before realizing i had simply mixed up my output class with an id, a mistake i seem to keep making lol. that quick change got the button to work, but i did notice then that the randomly generated text would be the same each time i clicked it unless i reloaded the page. after a quick check in with my partner, i realized the problem was that i had moved the newText variable from the listener function earlier and just needed to put it back. easy peasy!</p>
+                </div>
+			</div>
+
+			<div class="minor-section">
+				<h2>reflection</h2>
+					<p>this lab went very quickly and easily for me, which was nice, but i also wish i understood a little more about the random text function we were given to use. i can sort of pick it apart and figure out what each line does for the most part, but there's parts of it i don't understand, and i definitely wouldn't have been able to write a function like that myself, at least not without some prior instruction. having a chunk of function i didn't fully understand in my code made this lab a little daunting, so even though it turned out fine and does what the lab requires, i'd like to understand it a little more for future reference.</p>
+			</div>
+
+			<div class="minor-section">
+                <h2>results</h2>
+                <div id="results">
+                    <p>here's the results of the code!</p>
+					<button id="make-convo">say something!</button>
+                    <div class="output"></div>
+                </div>
+			</div>
+		</section>
+		<nav id="links">
+			<!-- Put links to other pages (including the homepage) here. -->
+			<ul>
+				<li><a href="../index.html">homepage</a></li>
+				<li><a href="../lab2/index.html">lab 2: intro to css & html</a></li>
+				<li><a href="../lab3/index.html">lab 3: file structure & file transfer</a></li>
+				<li><a href="../lab4/index.html">lab 4: pseudocoding & problem solving</a></li>
+				<li><a href="../lab5/index.html">lab 5: data types & variables</a></li>
+				<li><a href="../lab6/index.html">lab 6: arrays & objects</a></li>
+                <li><a href="../lab7/index.html">lab 7: functions</a></li>
+                <li><a href="../lab8/index.html">lab 8: anon functions & callbacks</a></li>
+                <li><a href="../lab9/index.html">lab 9: libraries & jquery</a></li>
+                <li><a href="../lab10/index.html">lab 10: javascript for the web</a></li>
+			</ul>
+		</nav>
+	</main>
+</body>
+</html>

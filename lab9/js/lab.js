@@ -1,6 +1,7 @@
 // index.js - lab 9
 // author: rhys muth
 // date: 05.12.25
+// requirements: needs jquery to run
 
 // add button to challenge section
 $("#challenge").append("<button id='button-challenge'>oooooo you wanna click this so bad</button>");
