@@ -1,0 +1,25 @@
+#content {
+    background-color: #d4ffe1;
+    overflow: auto;
+  }
+  
+.minor-section {
+    overflow: auto;
+}
+
+h1 {
+    color:#619c92;
+}
+  
+img.screenshot {
+    margin-top: 20px;
+    width: 100%;
+}
+  
+a,li {
+    color: #619c92;
+}
+
+.output p {
+    color: #b16363;
+}
