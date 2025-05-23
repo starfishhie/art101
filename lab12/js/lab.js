@@ -30,5 +30,5 @@ $("#button").click(function() {
     // runs sorter(name) and stores the result in a variable
     let nameResult = sorter(name);
     // appends a new styled paragraph to .output with the results
-    $(".output").append("<p>congratulations! you are the " + nameResult + "</p>");
+    $(".output").html('<p>congratulations! you are the ' + nameResult + '</p>');
 });
