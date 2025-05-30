@@ -20,14 +20,10 @@ a,li {
     color: #619c92;
 }
 
-.output p {
+.output {
     color: #b16363;
 }
 
 #results a {
     color: #223a3c;
-}
-
-.output img {
-    width: 200px;
 }
