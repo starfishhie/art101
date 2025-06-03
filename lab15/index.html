@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>lab 12 - conditionals</title>
+	<title>lab 15 - ajax</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -18,34 +18,51 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>lab 12 - conditionals</h1>
+			<h1>lab 15 - ajax</h1>
 			<div class="minor-section">
 				<h2>challenge</h2>
                 <div id="challenge">
-				    <p>the challenge for this lab was to use what we learned about conditionals or if/else statements to make a function and button that would sort the user into a category based on the remainder gotten from the length of their text input when divided by the number of groups.</p>
+				    <p>in this lab, we had to use jquery and ajax to fetch info from an api of our
+                        choice and display the results in our lab page.
+                    </p>
                 </div>
 			</div>
 
 			<div class="minor-section">
                 <h2>problems</h2>
                 <div id="problems">
-                    <p>i didn't run into any major issues or roadblocks with this lab! i just had to occassionally look at the example code in the instructions or reference older labs to remind myself on how to combine my new sorter function with button listeners. just a quick skim did the trick though!</p>
+                    <p>i had to take some time to figure this lab out. i spent a lot of time just 
+                        trying to figure out how the pokemon api worked since it contains so much data,
+                        and then i had to work out how to use the api to get what i wanted, aka a
+                        random pokemon, since it's not a pre-built generator and just stores all the 
+                        info. i messsed around a lot in jsbin and had to find a lot of references via
+                        google, wesbot, etc, and didn't really know what i was doing half of the time. 
+                        eventually, i got things to work by using a random number generator to give me 
+                        something to use as a pokemon id number, and then just messed with the api url
+                        a little to make it reference the id number and bring up the associated pokemon. 
+                        then i just had to fetch the name and image associated with whatever pokemon
+                        object got brought up, and bing bam boom there we go!
+                    </p>
                 </div>
 			</div>
 
 			<div class="minor-section">
 				<h2>reflection</h2>
-					<p>i didn't really have much trouble with this lab! my functions are pretty simple and straightforward and they do what the lab asks us to so i'm content with them being just functional for now, but in the future i might mess around with them to see how far i can push what the button can do and make it do a something a little more interesting than just displaying a small line of text.</p>
+					<p>i spent a lot of time just trying different things and not fully understanding 
+                        what i was doing, but i'm proud of the way i solved my problems and got things
+                        working! i had to do a lot of my own problem solving and work out how to make
+                        things happen on my own instead of just following step by step instructions, and 
+                        i think i did a good job!
+                    </p>
 			</div>
 
 			<div class="minor-section">
                 <h2>results</h2>
                 <div id="results">
-                    <p>enter your full name to find out if you're earth, sea, or sky!</p>
-                    <input  type="text" id="input" placeholder="input your name!">
-					<button id="button">submit</button>
+                    <p>click to find your pokemon partner!</p>
+					<button id="button">find your pokepal!</button>
                     <div class="output"></div>
-                    <a href="js/lab.js" target="source">javascript source</a>
+                    <br><a href="js/lab.js" target="source">javascript source</a>
                 </div>
 			</div>
 		</section>
@@ -64,9 +81,9 @@
                 <li><a href="../lab10/index.html">lab 10: javascript for the web</a></li>
                 <li><a href="../lab11/index.html">lab 11: javascript events & forms</a></li>
                 <li><a href="../lab12/index.html">lab 12: conditionals</a></li>
-				<li><a href="../lab13/index.html">lab 13: loops</a></li>
-				<li><a href="../lab14/index.html">lab 14: debugging tools & strategies</a></li>
-				<li><a href="../lab14/index.html">lab 15: ajax</a></li>
+                <li><a href="../lab13/index.html">lab 13: loops</a></li>
+                <li><a href="../lab14/index.html">lab 14: debugging tools & strategies</a></li>
+                <li><a href="../lab14/index.html">lab 15: ajax</a></li>
 			</ul>
 		</nav>
 	</main>
