@@ -2,7 +2,7 @@
 <html>
 <head>
 	<!-- This title is used for tabs and bookmarks -->
-	<title>lab 15 - ajax</title>
+	<title>lab 16 - json & apis</title>
 
 	<!-- Use UTF character set, a good idea with any webpage -->
   	<meta charset="UTF-8" />
@@ -18,12 +18,12 @@
 	<!-- Style this page by changing the CSS in ../css/site.css or css/lab.css -->
 	<main id="content">
 		<section>
-			<h1>lab 15 - ajax</h1>
+			<h1>lab 16 - json & apis</h1>
 			<div class="minor-section">
 				<h2>challenge</h2>
                 <div id="challenge">
-				    <p>in this lab, we had to use jquery and ajax to fetch info from an api of our
-                        choice and display the results in our lab page.
+				    <p>this lab was pretty similar to the previous one, as we were asked to use ajax 
+                        to fetch info from an api and display specific data in our html page.
                     </p>
                 </div>
 			</div>
@@ -31,36 +31,39 @@
 			<div class="minor-section">
                 <h2>problems</h2>
                 <div id="problems">
-                    <p>i had to take some time to figure this lab out. i spent a lot of time just 
-                        trying to figure out how the pokemon api worked since it contains so much data,
-                        and then i had to work out how to use the api to get what i wanted, aka a
-                        random pokemon, since it's not a pre-built generator and just stores all the 
-                        info. i messsed around a lot in jsbin and had to find a lot of references via
-                        google, wesbot, etc, and didn't really know what i was doing half of the time. 
-                        eventually, i got things to work by using a random number generator to give me 
-                        something to use as a pokemon id number, and then just messed with the api url
-                        a little to make it reference the id number and bring up the associated pokemon. 
-                        then i just had to fetch the name and image associated with whatever pokemon
-                        object got brought up, and bing bam boom there we go!
+                    <p>i didn't really struggle with the baseline parts of this lab like fetching the 
+                        info and displaying it, since i pretty much just copied and adapted the work 
+                        i'd done in the previous lab and in the in-class jsbin exercise. i did have an 
+                        error show up that wouldn't let me display the data, something about xkcd being 
+                        blocked by cors policy? i had no idea what that meant and never seen anything 
+                        like it before, so i turned to the internet and wesbot to interpret what that 
+                        meant and how to fix it (basically i just had to run the url through another 
+                        website). i also had issues when trying to randomize the comic that showed up. 
+                        i was able to do it in lab 15 with the pokemon, but i wanted to try and find a 
+                        simpler way to do it since i vaguely remembered us doing something like that in 
+                        class, but ultimately wasn't able to figure it out. i could probably just do 
+                        something similar to my random pokemon code, but i'd have to figure out how to 
+                        first fetch data from the api to figure out the most recent comic number, then 
+                        change the api accordingly to collect the data i wanted displayed.
                     </p>
                 </div>
 			</div>
 
 			<div class="minor-section">
 				<h2>reflection</h2>
-					<p>i spent a lot of time just trying different things and not fully understanding 
-                        what i was doing, but i'm proud of the way i solved my problems and got things
-                        working! i had to do a lot of my own problem solving and work out how to make
-                        things happen on my own instead of just following step by step instructions, and 
-                        i think i did a good job!
+					<p>like i said above, i wasn't able to do exactly what i wanted with this lab, 
+                        partly due to time constraints. i'm sure i could've figured out a way to 
+                        randomize the comic eventually, but with finals right now i had to leave it as 
+                        it is right now. other than that and the unexpected cors issue, this went 
+                        pretty smoothly!
                     </p>
 			</div>
 
 			<div class="minor-section">
                 <h2>results</h2>
                 <div id="results">
-                    <p>click to find your pokemon partner!</p>
-					<button id="button">find your pokepal!</button>
+                    <p>click to display the comic!</p>
+					<button id="button">click!</button>
                     <div class="output"></div>
                     <br><a href="js/lab.js" target="source">javascript source</a>
                 </div>
